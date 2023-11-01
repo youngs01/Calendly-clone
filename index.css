@@ -382,11 +382,13 @@ body {
 
 
 .bg-light-primary {
-    background-color: #E1F3FE;
+    background-color: #E0F3FF;
+ 
 }
 
 .notification {
     font-size: 11px;
+  
 }
 
 .notification-popular {
@@ -394,10 +396,18 @@ body {
 }
 
 .footer-btn {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    
     color: rgb(11, 53, 88);
 }
+
+.td-underline:hover{
+    
+    text-decoration: underline;
+}
+
 
 .haha {
 
@@ -453,12 +463,77 @@ body {
 }
 
 
-.faqs-btn{
 
-}
+
+
 
 .faqs-btn:hover{
     color: #0D6EFD;
+}
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7{
+    display: none;
+}
+
+.accordion-title {
+
+ width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-content{
+    transition: all ease 1s;
+    border: none;
+   
+}
+
+
+.chievron-appearence{
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .accordion-content {
+    max-height: 0;
+    display: none;
+
+    padding: 10px;
+    background-color: #fff;
+    transition: max-height 1s;
+}
+
+
+input[type="checkbox"]:checked + .accordion-title + .accordion-content {
+    max-height: 1000px;
+    display: block;
+}
+
+
+.accordion-item{
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.chievron-appearence{
+display: block;
+}
+
+.arrow-appearence{
+display: none;
+}
+.product-arrow{
+    justify-content: space-between;
+}
+
 }
 
 
