@@ -16,6 +16,7 @@ img {
 
 p {
     color: #476788;
+    font-size: 18px;
 }
 
 .breadcrum-language {
@@ -213,78 +214,89 @@ a {
 
 html,
 body {
-  position: relative;
+    position: relative;
 
 }
 
 
 
 .swiper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-  cursor: pointer;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
 
 .swiper {
-  width: 100%;
+    width: 100%;
 
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .swiper-slide {
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .mySwiper2 {
-  height: 80%;
-  width: 100%;
+    height: 80%;
+    width: 100%;
 }
 
 .mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
 }
 
 .mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
 }
 
 .mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-  color: #0D6EFD;
-  border-bottom: 2px solid #0D6EFD;
+    opacity: 1;
+    color: #0D6EFD;
+    border-bottom: 2px solid #0D6EFD;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+.swiper-tabs {
+    transition: all ease 0.3s;
+
+}
+
+.swiper-tabs:hover {
+    color: #0D6EFD;
+
+    opacity: 1;
+
+}
 
 
 .ff-normal {
@@ -300,6 +312,38 @@ body {
     overflow: hidden;
 }
 
+.solution-btn-dropdown {
+    position: relative;
+    transition: all ease 1s;
+
+}
+
+.solution-btn-dropdown:hover+.solution-btn-dropdown-content {
+    display: block;
+}
+
+.solution-btn-dropdown-content {
+    padding: 20px;
+    transition: all ease 1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    display: none;
+    z-index: 9999;
+
+}
+
+.border-right {
+    border-right: 1px solid rgb(182, 181, 181);
+}
+
+.btn-grayish-shade {
+    color: gray;
+}
+
+
 .Scheduling-section .inner-container {
     display: flex;
     overflow: hidden;
@@ -311,7 +355,8 @@ body {
     overflow: hidden;
     gap: 380px;
     width: 100%;
-    height: 100%;
+    height: 1780px;
+
 }
 
 
@@ -381,12 +426,12 @@ body {
 
 .bg-light-primary {
     background-color: #E0F3FF;
- 
+
 }
 
 .notification {
     font-size: 11px;
-  
+
 }
 
 .notification-popular {
@@ -397,12 +442,12 @@ body {
     font-weight: 500;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-    
+
     color: rgb(11, 53, 88);
 }
 
-.td-underline:hover{
-    
+.td-underline:hover {
+
     text-decoration: underline;
 }
 
@@ -465,7 +510,7 @@ body {
 
 
 
-.faqs-btn:hover{
+.faqs-btn:hover {
     color: #0D6EFD;
 }
 
@@ -475,25 +520,25 @@ body {
 #section4,
 #section5,
 #section6,
-#section7{
+#section7 {
     display: none;
 }
 
 .accordion-title {
 
- width: 100%;
+    width: 100%;
     padding: 10px;
     cursor: pointer;
 }
 
-.accordion-content{
+.accordion-content {
     transition: all ease 1s;
     border: none;
-   
+
 }
 
 
-.chievron-appearence{
+.chievron-appearence {
     display: none;
 }
 
@@ -502,94 +547,94 @@ body {
 /* thumbs slider */
 
 html,
-    body {
-      position: relative;
+body {
+    position: relative;
 
-    }
-
-    body {
-
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .swiper {
-      width: 100%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .swiper-slide {
-      cursor: pointer;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .mySwiper2-new {
-      height: 80%;
-      width: 100%;
-    }
-
-    .mySwiper-new {
-      height: 20%;
-      box-sizing: border-box;
-      padding: 10px 0;
-    }
-
-    .mySwiper-new .swiper-slide {
-      width: 25%;
-      height: 100%;
-      opacity: 0.4;
-    }
-
-    .mySwiper-new .swiper-slide-thumb-active {
-      opacity: 1;
-    }
-
-    .swiper-slide img {
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-.progress-line{
-    background-color:#0D6EFD ;
-  width: 10px;
-  border-radius: 20px;
-  height: 500px;
-  z-index: 9999;
-  position: absolute;
-  top: 40px;
-  left: 50px;
 }
 
-.container-scheduling-automation-appear{
+body {
+
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2-new {
+    height: 80%;
+    width: 100%;
+}
+
+.mySwiper-new {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper-new .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper-new .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.progress-line {
+    background-color: #0D6EFD;
+    width: 7px;
+    border-radius: 20px;
+    height: 500px;
+    z-index: 9999;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+
+.container-scheduling-automation-appear {
     display: none;
 }
 
@@ -617,7 +662,7 @@ html,
 
 @media screen and (max-width:1400px) {
 
-    .progress-line{
+    .progress-line {
         top: 20px;
         left: 0;
     }
@@ -629,38 +674,39 @@ html,
 
 @media screen and (max-width:500px) {
     .accordion-content {
-    max-height: 0;
-    display: none;
+        max-height: 0;
+        display: none;
 
-    padding: 10px;
-    background-color: #fff;
-    transition: max-height 1s;
-}
-
-
-input[type="checkbox"]:checked + .accordion-title + .accordion-content {
-    max-height: 1000px;
-    display: block;
-}
+        padding: 10px;
+        background-color: #fff;
+        transition: max-height 1s;
+    }
 
 
-.accordion-item{
-    width: 100%;
-    max-width: 500px;
-    overflow: hidden;
-    padding-bottom: 10px;
-}
+    input[type="checkbox"]:checked+.accordion-title+.accordion-content {
+        max-height: 1000px;
+        display: block;
+    }
 
-.chievron-appearence{
-display: block;
-}
 
-.arrow-appearence{
-display: none;
-}
-.product-arrow{
-    justify-content: space-between;
-}
+    .accordion-item {
+        width: 100%;
+        max-width: 500px;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+    .chievron-appearence {
+        display: block;
+    }
+
+    .arrow-appearence {
+        display: none;
+    }
+
+    .product-arrow {
+        justify-content: space-between;
+    }
 
 }
 
@@ -714,28 +760,28 @@ display: none;
         font-size: 30px;
     }
 
-    .get-start-btn{
+    .get-start-btn {
         width: 100%;
     }
 
-    .container-scheduling-automation{
-    display: none;
+    .container-scheduling-automation {
+        display: none;
     }
 
-    .container-scheduling-automation-appear{
+    .container-scheduling-automation-appear {
         display: block;
     }
-    
+
 
 }
 
 @media screen and (max-width:990px) {
-   
-    .br-swiper-slider-none-990{
+
+    .br-swiper-slider-none-990 {
         display: none;
     }
 
-    .container-scheduling-automation{
+    .container-scheduling-automation {
         display: none;
     }
 
@@ -778,7 +824,7 @@ display: none;
         font-size: 20px;
     }
 
- 
+
 }
 
 @media screen and (max-width:770px) {

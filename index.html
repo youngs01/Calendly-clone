@@ -22,13 +22,13 @@
 
 
 
-    <div class="breadcrum-language py-2">
+    <div class="breadcrum-language ">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-end">
                     <div class="d-flex align-items-center justify-content-end">
                         <div class=""><i class="fa-solid fa-globe text-primary"></i></div>
-                        <Select class="bg-transparent border-0 select-btn fw-bold p-0 m-0">
+                        <Select class="bg-transparent border-0 select-btn fw-bold p-2">
                             <option value="" class="">English</option>
                             <option value="" class="">Urdu</option>
                             <option value="" class="">French</option>
@@ -67,22 +67,97 @@
                 </button>
             </div>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center position-relative" id="navbarNav">
                 <ul class="navbar-nav d-flex align-items-center gap-3 fw-bold">
                     <li class="nav-item">
                         <a class="nav-link text-navy" aria-current="page" href="#">Product</a>
                     </li>
-                    <li class="nav-item dropdown text-navy">
-                        <a class="nav-link align-items-center d-flex gap-2" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Solutions <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item text-navy" href="#">Action</a></li>
-                            <li><a class="dropdown-item text-navy" href="#">Another action</a></li>
-                        
-                            <li><a class="dropdown-item text-navy" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item ">
+                        <a class="nav-link text-navy solution-btn-dropdown" aria-current="page" href="#">Solutions <i
+                                class="fa-solid fa-chevron-down"></i></a>
+
+                        <div class="solution-btn-dropdown-content w-100">
+                            <div class="row ">
+                                <div class="col-11 ">
+                                    <div class="row ">
+                                        <div class="col-12 col-lg-4 border-right p-3 ">
+                                            <div class="d-flex flex-column w-100 h-100 justify-content-center">
+                                                <h5 class="btn-grayish-shade fw-normall">By Role</h5>
+                                                <div class="d-flex pt-3 flex-column gap-3">
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">sales</h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Marketing</h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Costumer Success</h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Recuriting</h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Revenue Operations
+                                                        </h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Information
+                                                            Technology</h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">All Teams</h6>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-lg-4 border-right p-3 ">
+                                            <div class="d-flex flex-column w-100 h-100 ">
+                                                <h5 class="btn-grayish-shade fw-normall">BY INDUSTRIES</h5>
+                                                <div class="d-flex pt-3 flex-column gap-3">
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Technology</h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Financial services
+                                                        </h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Professional servixes
+                                                        </h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Education</h6>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 zp-3 ">
+                                            <div class="d-flex flex-column w-100 h-100 ">
+                                                <h5 class="btn-grayish-shade fw-normall">BY SIZE</h5>
+                                                <div class="d-flex pt-3 flex-column gap-3">
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Enterprise</h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Small & medium
+                                                            Businesses</h6>
+                                                    </a>
+                                                    <a href="" class="">
+                                                        <h6 class="fw-normall ff-normal text-navy">Costumer Success</h6>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-navy" href="#">Enterprise</a>
@@ -91,8 +166,8 @@
                         <a class="nav-link text-navy" href="#">Pricing</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link  text-navy align-items-center d-flex gap-2" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link  text-navy align-items-center d-flex gap-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Resouces <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -150,7 +225,6 @@
                         <h1 class="hero-heading text-navy ">Easy Scheduling ahead</h1>
                         <p class="hero-p">Calendly is your scheduling automation platform for eliminating the
                             back-and-forth emails to find the perfect time — and so much more.</p>
-
                         <p>Sign up free with Google or Microsoft.</p>
                     </div>
                 </div>
@@ -160,10 +234,14 @@
             <div class="row ">
                 <div class="col-12">
                     <div class="signin-btn-group d-flex gap-3">
-                        <button class="hero-signin btn d-flex align-items-center gap-1"> <img
-                                src="Screenshot 2023-10-21 040737.png" alt="" style="max-width: 35px;"> Google</button>
-                        <button class="hero-signin btn px-5 d-flex align-items-center gap-1 "><img src="microsift.png"
-                                alt="" style="max-width: 35px;"> Microsoft</button>
+                        <a href=""> <button class="hero-signin btn d-flex align-items-center gap-1"> <img
+                                    src="Screenshot 2023-10-21 040737.png" alt="" style="max-width: 30px;">
+                                Google</button></a>
+
+                        <a href="">
+                            <button class="hero-signin btn px-5 d-flex align-items-center gap-1 "><img
+                                    src="microsift.png" alt="" style="max-width: 30px;"> Microsoft</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -211,25 +289,29 @@
                             <img src="crocs.svg" alt="" style="max-width: 180px;">
                             <img src="zene.svg" alt="" style="max-width: 300px;">
                             <img src="Compass__2_.svg" alt="" style="max-width: 300px;">
-                            <img src="Twilio.svg" alt="" style="max-width: 250px;"><img src="dropbox.svg" alt="" style="max-width: 200px;">
+                            <img src="Twilio.svg" alt="" style="max-width: 250px;"><img src="dropbox.svg" alt=""
+                                style="max-width: 200px;">
                             <img src="crocs.svg" alt="" style="max-width: 180px;">
                             <img src="zene.svg" alt="" style="max-width: 300px;">
                             <img src="Compass__2_.svg" alt="" style="max-width: 300px;">
-                            <img src="Twilio.svg" alt="" style="max-width: 250px;"><img src="dropbox.svg" alt="" style="max-width: 200px;">
+                            <img src="Twilio.svg" alt="" style="max-width: 250px;"><img src="dropbox.svg" alt=""
+                                style="max-width: 200px;">
                             <img src="crocs.svg" alt="" style="max-width: 180px;">
                             <img src="zene.svg" alt="" style="max-width: 300px;">
                             <img src="Compass__2_.svg" alt="" style="max-width: 300px;">
-                            <img src="Twilio.svg" alt="" style="max-width: 250px;"><img src="dropbox.svg" alt="" style="max-width: 200px;">
+                            <img src="Twilio.svg" alt="" style="max-width: 250px;"><img src="dropbox.svg" alt=""
+                                style="max-width: 200px;">
                             <img src="crocs.svg" alt="" style="max-width: 180px;">
                             <img src="zene.svg" alt="" style="max-width: 300px;">
                             <img src="Compass__2_.svg" alt="" style="max-width: 300px;">
-                            <img src="Twilio.svg" alt="" style="max-width: 250px;"><img src="dropbox.svg" alt="" style="max-width: 200px;">
+                            <img src="Twilio.svg" alt="" style="max-width: 250px;"><img src="dropbox.svg" alt=""
+                                style="max-width: 200px;">
                             <img src="crocs.svg" alt="" style="max-width: 180px;">
                             <img src="zene.svg" alt="" style="max-width: 300px;">
                             <img src="Compass__2_.svg" alt="" style="max-width: 300px;">
                             <img src="Twilio.svg" alt="" style="max-width: 250px;">
 
-                           
+
 
                         </div>
                     </marquee>
@@ -273,7 +355,7 @@
                             </div>
                             <div class="swiper-slide swiper-tabs">
                                 <h6 class="fw-bold  py-4">
-                           Information Technology
+                                    Information Technology
                                 </h6>
                             </div>
                             <div class="swiper-slide swiper-tabs">
@@ -283,7 +365,7 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="swiper-wrapper  ">
                         <div class="swiper-slide ">
 
@@ -668,106 +750,113 @@
 
 
     <div class="container-fluid  pt-5">
- <div class="container pt-5 ">
-<div class="row">
-    <div class="col-12">
-        <h1 class="text-navy fw-normall ff-normal text-center">
-            Scheduling automation lets you focus on <span class="br-swiper-slider-none-990"><br></span> high-value meetings
-        </h1>
-    </div>
-</div>
-</div>
+        <div class="container pt-5 ">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-navy fw-normall ff-normal text-center">
+                        Scheduling automation lets you focus on <span class="br-swiper-slider-none-990"><br></span>
+                        high-value meetings
+                    </h1>
+                </div>
+            </div>
+        </div>
         <div class="container  container-scheduling-automation">
-<div class="d-flex">
-    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2-new d-flex justify-content-center w-100 h-100">
-        <div class="swiper-wrapper  pt-5">
-          <div class="swiper-slide">
-            <img src="Calendly-Demand-Gen-2__1_.webp"  style="max-width: 550px ;">
-          </div>
-          <div class="swiper-slide">
-            <img src="Calendly-Route-Customers-Sales-team.webp"  style="max-width: 550px ;">
-          </div>
-          <div class="swiper-slide">
-            <img src="Calendly-Reminders-2.webp"  style="max-width: 550px ;">
-          </div>
-          <div class="swiper-slide">
-            <img src="Calendly-Teams-Workflows__1_ (1).webp"  style="max-width: 550px ;">
-          </div>
-  
-        </div>
-      </div>
-      <div thumbsSlider="" class="swiper mySwiper-new px-3 d-flex  pt-5 position-relative">
+            <div class="d-flex">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                    class="swiper mySwiper2-new d-flex justify-content-center w-100 h-100">
+                    <div class="swiper-wrapper  pt-5">
+                        <div class="swiper-slide">
+                            <img src="Calendly-Demand-Gen-2__1_.webp" style="max-width: 550px ;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Calendly-Route-Customers-Sales-team.webp" style="max-width: 550px ;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Calendly-Reminders-2.webp" style="max-width: 550px ;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Calendly-Teams-Workflows__1_ (1).webp" style="max-width: 550px ;">
+                        </div>
+
+                    </div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper-new px-3 d-flex  pt-5 position-relative">
 
 
-        <div class="progress-line">
+                    <div class="progress-line">
 
-        </div>
-        
-        
-        
-        <div class="swiper-wrapper flex-column align-items-center justify-content-center gap-5 w-100 h-100">
-          <div class="swiper-slide w-100">
-            <h2 class="text-navy fw-bold ff-normal text-start ">Let people Schedule meetings <span class="br-swiper-slider-none-990"><br></span> on your website</h2>
-          </div>
-          <div class="swiper-slide w-100">
-            <h2 class="text-navy fw-bold ff-normal text-start ">Screen people before they can  <span class="br-swiper-slider-none-990"><br></span> with with you </h2>   
-          </div>
-          <div class="swiper-slide w-100">
-            <h2 class="text-navy fw-bold ff-normal text-start"> Make people reconfirm meeting <span class="br-swiper-slider-none-990"><br></span> with you</h2>
-          </div>
-          <div class="swiper-slide w-100">
-            <h2 class="text-navy fw-bold ff-normal text-start ">Automatically move a deal along <span class="br-swiper-slider-none-990"><br></span>  with helpful content</h2>
-          </div>
-  
-        </div>
-      </div>
-       </div>
+                    </div>
+
+
+
+                    <div class="swiper-wrapper flex-column align-items-center justify-content-center gap-5 w-100 h-100">
+                        <div class="swiper-slide w-100">
+                            <h2 class="text-navy fw-bold ff-normal text-start ">Let people Schedule meetings <span
+                                    class="br-swiper-slider-none-990"><br></span> on your website</h2>
+                        </div>
+                        <div class="swiper-slide w-100">
+                            <h2 class="text-navy fw-bold ff-normal text-start ">Screen people before they can <span
+                                    class="br-swiper-slider-none-990"><br></span> with with you </h2>
+                        </div>
+                        <div class="swiper-slide w-100">
+                            <h2 class="text-navy fw-bold ff-normal text-start"> Make people reconfirm meeting <span
+                                    class="br-swiper-slider-none-990"><br></span> with you</h2>
+                        </div>
+                        <div class="swiper-slide w-100">
+                            <h2 class="text-navy fw-bold ff-normal text-start ">Automatically move a deal along <span
+                                    class="br-swiper-slider-none-990"><br></span> with helpful content</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
 
         <div class="container-scheduling-automation-appear p-3">
-          
+
             <div class="row  justify-content-center pt-5">
                 <div class="col-12 col-md-12">
-                  <h3 class="fw-normall text-navy text-center">Let people Schedule meetings on your website </h3>
+                    <h3 class="fw-normall text-navy text-center">Let people Schedule meetings on your website </h3>
                 </div>
                 <div class="col-12 col-md-6 pt-3">
-                  <img src="Calendly-Demand-Gen-2__1_.webp" alt="">
+                    <img src="Calendly-Demand-Gen-2__1_.webp" alt="">
                 </div>
             </div>
 
             <div class="row  justify-content-center pt-5">
                 <div class="col-12 col-md-12">
-                  <h3 class="fw-normall text-navy text-center">Screen people before they book with you</h3>
+                    <h3 class="fw-normall text-navy text-center">Screen people before they book with you</h3>
                 </div>
                 <div class="col-12 col-md-6 pt-3">
-                  <img src="Calendly-Route-Customers-Sales-team.webp" alt="">
+                    <img src="Calendly-Route-Customers-Sales-team.webp" alt="">
                 </div>
             </div>
 
             <div class="row  justify-content-center pt-5">
                 <div class="col-12 col-md-12">
-                  <h3 class="fw-normall text-navy text-center">Make people reconfirm meetings with you </h3>
+                    <h3 class="fw-normall text-navy text-center">Make people reconfirm meetings with you </h3>
                 </div>
                 <div class="col-12 col-md-6 pt-3">
-                  <img src="Calendly-Reminders-2.webp" alt="">
+                    <img src="Calendly-Reminders-2.webp" alt="">
                 </div>
             </div>
 
             <div class="row  justify-content-center pt-5">
                 <div class="col-12 col-md-12">
-                  <h3 class="fw-normall text-navy text-center">Automatically move a deal along with helpful content</h3>
+                    <h3 class="fw-normall text-navy text-center">Automatically move a deal along with helpful content
+                    </h3>
                 </div>
                 <div class="col-12 col-md-6 pt-3">
-                  <img src="Calendly-Teams-Workflows__1_ (1).webp" alt="">
+                    <img src="Calendly-Teams-Workflows__1_ (1).webp" alt="">
                 </div>
             </div>
 
         </div>
     </div>
-      
-      
-      
+
+
+
 
 
 
@@ -824,7 +913,7 @@
 
                 <div class="col-12 ">
                     <div class="d-flex flex-wrap justify-content-between gap-4 ">
-                        
+
                         <div class="card-extension-logo">
                             <div class="hahaha">
                                 <img src="duo.png" alt="">
@@ -996,12 +1085,14 @@
                     <div class="col-12">
                         <div class="row pt-4">
                             <div class="col-12 col-lg-6 text-center text-lg-end">
-                                <button class="btn btn-primary ff-normal fw-normall get-start-btn   py-3 px-5">Sign up for
+                                <button class="btn btn-primary ff-normal fw-normall get-start-btn   py-3 px-5">Sign up
+                                    for
                                     free</button>
                             </div>
                             <div class="col-12 col-lg-6  text-center text-lg-start pt-3 pt-lg-0">
                                 <button
-                                    class="btn bg-light border-1 border-primary text-primary get-start-btn   ff-normal fw-normall py-3 px-5"> Talk
+                                    class="btn bg-light border-1 border-primary text-primary get-start-btn   ff-normal fw-normall py-3 px-5">
+                                    Talk
                                     to Sales <span class="text-light"></span></button>
                             </div>
                         </div>
@@ -1062,40 +1153,61 @@
 
 
 
-<div class="container-fluid pt-5 pb-5">
-    <div class="container pt-5 pt-md-5 ">
-        <div class="row">
+    <div class="container-fluid pt-5 pb-5">
+        <div class="container pt-5 pt-md-5 ">
+            <div class="row">
 
-            <div class="col-12 col-md-6 col-lg-3 ">
-                        <div class="accordion">
-                            <div class="accordion-item border-0 d-flex flex-column">
-                                <input type="checkbox" class="" id="section1">
-                                <label for="section1" class="border-0 accordion-title  p-0"><h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Product <i class="fa-solid fa-arrow-right fs-5 arrow-appearence"></i> <i class="fa-solid chievron-appearence fa-chevron-down"></i></h4> </i></label>
-                                <div class="accordion-content  pt-3">
-                                 <div class="">
-                                 
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="accordion">
+                        <div class="accordion-item border-0 d-flex flex-column">
+                            <input type="checkbox" class="" id="section1">
+                            <label for="section1" class="border-0 accordion-title  p-0">
+                                <h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Product <i
+                                        class="fa-solid fa-arrow-right fs-5 arrow-appearence"></i> <i
+                                        class="fa-solid chievron-appearence fa-chevron-down"></i></h4> </i>
+                            </label>
+                            <div class="accordion-content  pt-3">
+                                <div class="">
+
                                     <ul class="p-0 d-flex flex-column gap-3">
-                                        <li><a href="" class="footer-btn ff-normal"> <span class="td-underline">Routing</span> <span class="text-primary notification notification-popular p-2 rounded-5" >New</span></a></li>
-                                        <li><a href="#"  class="footer-btn ff-normal"><span class="td-underline">Availability</span> <span class="notification notification-popular p-2 rounded-5"> Popular </span></a></li>
-                                        <li><a href="#" class="footer-btn ff-normal"> Team Scheduling <span class="notification notification-popular p-2 rounded-5"> Popular </span></a></li>
+                                        <li><a href="" class="footer-btn ff-normal"> <span
+                                                    class="td-underline">Routing</span> <span
+                                                    class="text-primary notification notification-popular p-2 rounded-5">New</span></a>
+                                        </li>
+                                        <li><a href="#" class="footer-btn ff-normal"><span
+                                                    class="td-underline">Availability</span> <span
+                                                    class="notification notification-popular p-2 rounded-5"> Popular
+                                                </span></a></li>
+                                        <li><a href="#" class="footer-btn ff-normal"> Team Scheduling <span
+                                                    class="notification notification-popular p-2 rounded-5"> Popular
+                                                </span></a></li>
                                         <li><a href="#" class="footer-btn ff-normal">Integerations</a></li>
-                                        <li><a href="#" class="footer-btn ff-normal"><h4 class="text-navy fw-bold ff-normal ">Teams & Companies <i class="fa-solid fa-arrow-right"></i></h4></a></li>
-                                        <li><a href="#" class="footer-btn ff-normal"><h4 class="text-navy fw-bold ff-normal ">Pricing <i class="fa-solid fa-arrow-right"></i></h4></a></li>
+                                        <li><a href="#" class="footer-btn ff-normal">
+                                                <h4 class="text-navy fw-bold ff-normal ">Teams & Companies <i
+                                                        class="fa-solid fa-arrow-right"></i></h4>
+                                            </a></li>
+                                        <li><a href="#" class="footer-btn ff-normal">
+                                                <h4 class="text-navy fw-bold ff-normal ">Pricing <i
+                                                        class="fa-solid fa-arrow-right"></i></h4>
+                                            </a></li>
                                     </ul>
-                                 </div>
                                 </div>
                             </div>
                         </div>
-                       </div>
+                    </div>
+                </div>
 
-                       <div class="col-12 col-md-6 col-lg-3 pt-5 pt-md-0">
-                        <div class="accordion">
-                            <div class="accordion-item border-0 d-flex flex-column">
-                                <input type="checkbox" class="" id="section2">
-                                <label for="section2" class="border-0 accordion-title  p-0"><h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Team <i class="fa-solid chievron-appearence fa-chevron-down"></i></h4> </label>
-                                <div class="accordion-content  pt-3">
-                                 <div class="">
-                                    
+                <div class="col-12 col-md-6 col-lg-3 pt-5 pt-md-0">
+                    <div class="accordion">
+                        <div class="accordion-item border-0 d-flex flex-column">
+                            <input type="checkbox" class="" id="section2">
+                            <label for="section2" class="border-0 accordion-title  p-0">
+                                <h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Team <i
+                                        class="fa-solid chievron-appearence fa-chevron-down"></i></h4>
+                            </label>
+                            <div class="accordion-content  pt-3">
+                                <div class="">
+
                                     <ul class="p-0 d-flex flex-column gap-3">
                                         <li><a href="#" class="footer-btn td-underline ">Sales</a></li>
                                         <li><a href="#" class="footer-btn td-underline ">Marketing</a></li>
@@ -1105,123 +1217,140 @@
                                         <li><a href="#" class="footer-btn td-underline ">Revenue Operations</a></li>
                                     </ul>
 
-                                 </div>
                                 </div>
                             </div>
                         </div>
-                       </div>
+                    </div>
+                </div>
 
-                       <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
-                        <div class="accordion">
-                            <div class="accordion-item border-0 d-flex flex-column">
-                                <input type="checkbox" class="" id="section3">
-                                <label for="section3" class="border-0 accordion-title  p-0"><h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Industries <i class="fa-solid chievron-appearence fa-chevron-down"></i></h4> </label>
-                                <div class="accordion-content  pt-3">
-                                 <div class="">
-                                 
-                                 <ul class="p-0 d-flex flex-column gap-3">
-                                    <li><a href="" class="footer-btn td-underline ">Technology </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Financial Services </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Professional Services </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Educations </a></li>
-                                 </ul>
-                                 </div>
+                <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
+                    <div class="accordion">
+                        <div class="accordion-item border-0 d-flex flex-column">
+                            <input type="checkbox" class="" id="section3">
+                            <label for="section3" class="border-0 accordion-title  p-0">
+                                <h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Industries <i
+                                        class="fa-solid chievron-appearence fa-chevron-down"></i></h4>
+                            </label>
+                            <div class="accordion-content  pt-3">
+                                <div class="">
+
+                                    <ul class="p-0 d-flex flex-column gap-3">
+                                        <li><a href="" class="footer-btn td-underline ">Technology </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Financial Services </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Professional Services </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Educations </a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                       </div>
+                    </div>
+                </div>
 
-                       <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
-                        <div class="accordion">
-                            <div class="accordion-item border-0 d-flex flex-column">
-                                <input type="checkbox" class="" id="section4">
-                                <label for="section4" class="border-0 accordion-title  p-0"><h4 class="text-navy   d-flex align-items-center product-arrow  gap-2">Company  <i class="fa-solid chievron-appearence fa-chevron-down"></i></h4></label>
-                                <div class="accordion-content  pt-3" >
-                                 <div class="">
-                       
+                <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
+                    <div class="accordion">
+                        <div class="accordion-item border-0 d-flex flex-column">
+                            <input type="checkbox" class="" id="section4">
+                            <label for="section4" class="border-0 accordion-title  p-0">
+                                <h4 class="text-navy   d-flex align-items-center product-arrow  gap-2">Company <i
+                                        class="fa-solid chievron-appearence fa-chevron-down"></i></h4>
+                            </label>
+                            <div class="accordion-content  pt-3">
+                                <div class="">
+
                                     <ul class="p-0 d-flex flex-column gap-3">
                                         <li><a href="#" class="footer-btn td-underline">Costumers</a></li>
                                         <li><a href="#" class="footer-btn td-underline">About Us</a></li>
                                         <li><a href="#" class="footer-btn td-underline">Leadership</a></li>
-                                        <li><a href="#" class="footer-btn">Careers <span class="text-primary notification fw-normall notification-popular p-2 rounded-5" >We're Hiring</span> </a></li>
+                                        <li><a href="#" class="footer-btn">Careers <span
+                                                    class="text-primary notification fw-normall notification-popular p-2 rounded-5">We're
+                                                    Hiring</span> </a></li>
                                         <li><a href="#" class="footer-btn td-underline">Newsroom</a></li>
 
                                     </ul>
-                                 </div>
                                 </div>
                             </div>
                         </div>
-                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-0 pt-lg-5">
+
+                <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
+                    <div class="accordion">
+                        <div class="accordion-item border-0 d-flex flex-column">
+                            <input type="checkbox" class="" id="section5">
+                            <label for="section5" class="border-0 accordion-title  p-0">
+                                <h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Resources <i
+                                        class="fa-solid chievron-appearence fa-chevron-down"></i></h4>
+                            </label>
+                            <div class="accordion-content  pt-3">
+                                <div class="">
+
+                                    <ul class="p-0 d-flex flex-column gap-3">
+                                        <li><a href="" class="footer-btn td-underline">Blog </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Resources center </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Compare </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Became partner </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Developer Tools </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
+                    <div class="accordion">
+                        <div class="accordion-item border-0 d-flex flex-column">
+                            <input type="checkbox" class="" id="section6">
+                            <label for="section6" class="border-0 accordion-title  p-0">
+                                <h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Download <i
+                                        class="fa-solid chievron-appearence fa-chevron-down"></i></h4>
+                            </label>
+                            <div class="accordion-content  pt-3">
+                                <div class="">
+
+                                    <ul class="p-0 d-flex flex-column gap-3">
+                                        <li><a href="" class="footer-btn td-underline">Calendly for ios </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Calendly for Android </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Chrome Extension </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Firefoc Extensions </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
+                    <div class="accordion">
+                        <div class="accordion-item border-0 d-flex flex-column">
+                            <input type="checkbox" class="" id="section7">
+                            <label for="section7" class="border-0 accordion-title  p-0">
+                                <h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Connect <i
+                                        class="fa-solid chievron-appearence fa-chevron-down"></i></h4>
+                            </label>
+                            <div class="accordion-content  pt-3">
+                                <div class="">
+
+                                    <ul class="p-0 d-flex flex-column gap-3">
+                                        <li><a href="" class="footer-btn td-underline">Sign up for free </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Talk to sales </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Help Center </a></li>
+                                        <li><a href="" class="footer-btn td-underline">Contact us </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
-        <div class="row pt-0 pt-lg-5">
-            
-                       <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
-                        <div class="accordion">
-                            <div class="accordion-item border-0 d-flex flex-column">
-                                <input type="checkbox" class="" id="section5">
-                                <label for="section5" class="border-0 accordion-title  p-0"><h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Resources  <i class="fa-solid chievron-appearence fa-chevron-down"></i></h4> </label>
-                                <div class="accordion-content  pt-3">
-                                 <div class="">
-                                 
-                                 <ul class="p-0 d-flex flex-column gap-3">
-                                    <li><a href="" class="footer-btn td-underline">Blog </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Resources center  </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Compare </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Became partner </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Developer Tools </a></li>
-                                 </ul>
-                                 </div>
-                                </div>
-                            </div>
-                        </div>
-                       </div>
-
-                       
-                       <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
-                        <div class="accordion">
-                            <div class="accordion-item border-0 d-flex flex-column">
-                                <input type="checkbox" class="" id="section6">
-                                <label for="section6" class="border-0 accordion-title  p-0"><h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Download <i class="fa-solid chievron-appearence fa-chevron-down"></i></h4> </label>
-                                <div class="accordion-content  pt-3">
-                                 <div class="">
-                                 
-                                 <ul class="p-0 d-flex flex-column gap-3">
-                                    <li><a href="" class="footer-btn td-underline">Calendly for ios </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Calendly for Android </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Chrome Extension </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Firefoc Extensions </a></li>
-                                 </ul>
-                                 </div>
-                                </div>
-                            </div>
-                        </div>
-                       </div>
-
-                       
-                       <div class="col-12 col-md-6 col-lg-3 pt-5 pt-lg-0 ">
-                        <div class="accordion">
-                            <div class="accordion-item border-0 d-flex flex-column">
-                                <input type="checkbox" class="" id="section7">
-                                <label for="section7" class="border-0 accordion-title  p-0"><h4 class=" text-navy  d-flex align-items-center product-arrow  gap-2">Connect <i class="fa-solid chievron-appearence fa-chevron-down"></i></h4> </label>
-                                <div class="accordion-content  pt-3">
-                                 <div class="">
-                                 
-                                 <ul class="p-0 d-flex flex-column gap-3">
-                                    <li><a href="" class="footer-btn td-underline">Sign up for free </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Talk to sales </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Help Center </a></li>
-                                    <li><a href="" class="footer-btn td-underline">Contact us </a></li>
-                                 </ul>
-                                 </div>
-                                </div>
-                            </div>
-                        </div>
-                       </div>
-        </div>
-
     </div>
-</div>
 
 
 
@@ -1231,7 +1360,7 @@
         <div class="container border-top">
             <div class="row pt-3">
 
-                <div class="col-12  col-lg-2">
+                <div class="col-12  col-lg-3">
                     <div class="">
                         <div class=" py-2">
                             <div class="container">
@@ -1269,7 +1398,7 @@
 
                 <div class="col-12 col-lg-2 pt-3  ">
                     <div class="d-flex w-100 h-100 flex-wrap align-items-center  gap-3 ">
-                        
+
                         <div class="fs-4"><i class="fa-brands text-navy fa-twitter faqs-btn"></i></div>
                         <div class="fs-4"><i class="fa-brands text-navy fa-facebook faqs-btn"></i></div>
                         <div class="fs-4"><i class="fa-brands text-navy fa-instagram faqs-btn"></i></div>
@@ -1288,68 +1417,61 @@
 
 
 
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br>
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
- 
+
 
         var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 10,
-      slidesPerView: 2.5,
-      freeMode: true,
-      watchSlidesProgress: true,
-      breakpoints: {
-                 // When the viewport width is less than or equal to 767px (mobile)
-                 767: {
-                     slidesPerView: 3.5, // Display 2 slides on mobile
-                 },
-                 // When the viewport width is greater than 767px and less than or equal to 1023px (tablet)
-                 1023: {
-                     slidesPerView: 6, // Display 5 slides on tablet
-                 },
-             },
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
-      },
- 
-    });
+            spaceBetween: 10,
+            slidesPerView: 2.5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                // When the viewport width is less than or equal to 767px (mobile)
+                767: {
+                    slidesPerView: 3.5, // Display 2 slides on mobile
+                },
+                // When the viewport width is greater than 767px and less than or equal to 1023px (tablet)
+                1023: {
+                    slidesPerView: 6, // Display 5 slides on tablet
+                },
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+
+        });
 
 
-    var swiper = new Swiper(".mySwiper-new", {
-      loop: true,
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2-new", {
-      loop: true,
-      spaceBetween: 10,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
-      },
-    });
+        var swiper = new Swiper(".mySwiper-new", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2-new", {
+            loop: true,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
 
     </script>
 
